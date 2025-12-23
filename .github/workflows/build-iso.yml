@@ -77,8 +77,7 @@ jobs:
             echo 'CUSTOM_PACKAGES="$CUSTOM_PACKAGES luci-app-store"' >> shell/custom-packages.sh
             echo "✅ 已追加 luci-app-store"
           else
-            echo 'CUSTOM_PACKAGES="$CUSTOM_PACKAGES -luci-app-store -luci-app-quickstart -luci-i18n-quickstart-zh-cn"' >> shell/custom-packages.sh
-            echo "❎ 未启用商店，已排除 store/quickstart 相关包"
+            echo "❎ 未启用 luci-app-store"
           fi
 
       - name: ✅ 正在构建ImmortalWrt固件
